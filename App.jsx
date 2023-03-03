@@ -1,5 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { NavigationContainer } from '@react-navigation/native';
+import { StatusBar } from 'expo-status-bar';
 
 
 import { Rotas } from './src/routes';
@@ -8,7 +9,7 @@ export default function App() {
   return (
   <NavigationContainer>
       <Rotas />
-      <StatusBar style="auto" />
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
       </NavigationContainer>
   );
 
